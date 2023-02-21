@@ -1,14 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
 @font-face {
-  font-family: "SentenceDemo";
+  font-family: "SentenceDEMO";
   src: url("../fonts/SentencedemoPersonalUse-BW7Ll.woff") format("woff"), url("../fonts/SentencedemoPersonalUse-BW7Ll.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 /* 
     font-family: 'Roboto', sans-serif;
-    font-family: 'SentenceDemo'; 
+    font-family: 'SentenceDEMO'; 
 */
+.main-inner {
+  background: rgba(58, 32, 80, 0.7);
+  border: 3px solid #B0E31B;
+  border-radius: 30px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 37px 0 47px;
+}
+.main-inner__text {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  max-width: 395px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.main-inner__text span {
+  color: #B0E31B;
+}
+.main-inner__link {
+  text-align: center;
+}
+.main-inner__link a {
+  background: #B0E31B;
+  border: 1px solid #B0E31B;
+  box-shadow: 0px 4px 4px rgba(203, 196, 196, 0.1);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #383E4B;
+  text-transform: uppercase;
+  padding: 8px 48px;
+  transition: all linear 0.1s;
+}
+.main-inner__link a:hover {
+  background: none;
+  box-shadow: none;
+  color: #fff;
+}
+.main-title {
+  font-family: "SentenceDEMO";
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #B0E31B;
+  padding-bottom: 17px;
+}
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +69,10 @@ html {
 
 body {
   margin: 0;
+  color: #fff;
+  max-width: 600px;
   font-family: "Roboto";
+  background: url(../img/bg.png);
 }
 
 h1,
