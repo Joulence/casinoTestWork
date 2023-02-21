@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+@font-face {
+  font-family: "SentenceDemo";
+  src: url("../fonts/SentencedemoPersonalUse-BW7Ll.woff") format("woff"), url("../fonts/SentencedemoPersonalUse-BW7Ll.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'SentenceDemo'; 
+*/
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.container {
+  padding: 0 4%;
+}
+
+a {
+  color: #212121;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* @media (max-width: 1600px) {
+    @include mediaScreen(4%);
+}
+
+@media (max-width: 1280px) {
+    @include mediaScreen(3%);
+}
+
+@media (max-width: 1140px) {
+    @include mediaScreen(2%);
+}
+
+@media (max-width: 426px) {
+    @include mediaScreen(1%);
+} */
