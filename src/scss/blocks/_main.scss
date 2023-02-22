@@ -1,10 +1,11 @@
 .main {
+    max-width: 480px;
+    margin: 0 auto;
     &-inner {
         background: rgba(58, 32, 80, 0.7);
         border: 3px solid #B0E31B;
         border-radius: 30px;
-        max-width: 480px;
-        margin: 0 auto;
+
         padding: 37px 0 47px;
 
         &__text {

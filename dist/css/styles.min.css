@@ -9,12 +9,14 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'SentenceDEMO'; 
 */
+.main {
+  max-width: 480px;
+  margin: 0 auto;
+}
 .main-inner {
   background: rgba(58, 32, 80, 0.7);
   border: 3px solid #B0E31B;
   border-radius: 30px;
-  max-width: 480px;
-  margin: 0 auto;
   padding: 37px 0 47px;
 }
 .main-inner__text {
@@ -56,6 +58,110 @@
   text-transform: capitalize;
   color: #B0E31B;
   padding-bottom: 17px;
+}
+
+.additionals {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Block1 Block3 . ." "Block2 Block3 . ." ". . . .";
+}
+.additionals-card {
+  width: 228px;
+  position: relative;
+  border: 3px solid #B0E31B;
+  border-radius: 20px;
+  padding: 6px 25px 0;
+  background: rgba(58, 32, 80, 0.86);
+  height: 228px;
+}
+.additionals-card .card-blur {
+  position: absolute;
+  width: 100%;
+  height: 185.55px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(58, 32, 80, 0) 0%, #3A2050 47.19%);
+  border-radius: 20px;
+}
+.additionals-card .card-blur-circle {
+  width: 215.87px;
+  height: 219.51px;
+  position: absolute;
+  background: radial-gradient(50% 50% at 50% 50%, #E9C5F2 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.5;
+  filter: blur(5px);
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.additionals-card img {
+  position: absolute;
+  left: 35px;
+  z-index: 1;
+  bottom: 0;
+}
+.additionals-card .card-text {
+  position: absolute;
+  bottom: 20px;
+}
+.additionals-card .card-text h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+}
+.additionals-card .card-text div {
+  text-align: center;
+  top: 3px;
+  padding: 8px 0;
+}
+.additionals-card .card-text div a {
+  background: #B0E31B;
+  box-shadow: 0px 4px 4px rgba(203, 196, 196, 0.1);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #383E4B;
+  text-transform: uppercase;
+  padding: 7px 62px;
+}
+.additionals-card h3,
+.additionals-card div {
+  position: relative;
+  z-index: 1;
+}
+.additionals-card.card-chick {
+  grid-area: Block1;
+}
+.additionals-card.card-skeleton {
+  grid-area: Block2;
+}
+.additionals-card.card-skeleton img {
+  left: 0;
+}
+.additionals-card.card-skeleton .card-text {
+  z-index: 3;
+}
+.additionals-card.card-skeleton .card-blur {
+  height: 185.55px;
+  background: linear-gradient(180deg, rgba(58, 32, 80, 0) 0%, #3A2050 61.44%);
+  border-radius: 20px;
+}
+.additionals-card.card-buffalo {
+  grid-area: Block3;
+  height: 477px;
+}
+.additionals-card.card-buffalo img {
+  top: 27px;
+  left: 0;
+}
+.additionals-card.card-buffalo .card-text {
+  bottom: 60px;
 }
 
 * {
