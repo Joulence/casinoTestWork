@@ -329,6 +329,12 @@
   color: #fff;
   border: #B0E31B solid 1px;
 }
+.contacts-fly {
+  width: 86px;
+  transform: rotate(-33deg);
+  right: -9%;
+  bottom: -13%;
+}
 
 * {
   padding: 0;
