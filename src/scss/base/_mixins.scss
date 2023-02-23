@@ -8,4 +8,12 @@
     color: #383E4B;
     text-transform: uppercase;
     padding: $paddings;
+    transition: all linear .1s;
+
+    &:hover {
+        background: none;
+        box-shadow: none;
+        color: #fff;
+        border: #B0E31B solid 1px;
+    }
 }
