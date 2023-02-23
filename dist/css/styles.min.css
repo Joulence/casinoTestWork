@@ -286,6 +286,7 @@
 .contacts {
   max-width: 480px;
   margin: 28px auto 0;
+  position: relative;
 }
 .contacts-inner {
   display: flex;

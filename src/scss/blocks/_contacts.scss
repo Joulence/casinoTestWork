@@ -1,6 +1,7 @@
 .contacts {
     max-width: $width;
     margin: 28px auto 0;
+    position: relative;
 
     &-inner {
         display: flex;
