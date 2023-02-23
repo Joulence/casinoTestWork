@@ -146,11 +146,12 @@
 }
 
 .additionals {
-  margin-top: 48px;
+  margin: 48px auto 0;
+  max-width: 480px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 20px 22px;
   grid-template-areas: "Block1 Block3 . ." "Block2 Block3 . ." ". . . .";
 }
 .additionals-card {
@@ -238,6 +239,7 @@
   border-radius: 20px;
 }
 .additionals-card.card-buffalo {
+  background: #3D1F55;
   grid-area: Block3;
   height: 477px;
 }
@@ -247,6 +249,19 @@
 }
 .additionals-card.card-buffalo .card-text {
   bottom: 60px;
+}
+.additionals-card.card-buffalo .card-blur {
+  background: linear-gradient(180deg, rgba(61, 31, 85, 0) 0%, #3D1F55 26.76%);
+  width: 100%;
+  height: 250.06px;
+}
+.additionals-card.card-buffalo .card-blur-circle {
+  width: 100%;
+  height: 296.15px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 28.65%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.5;
+  filter: blur(5px);
+  top: 0;
 }
 
 * {
