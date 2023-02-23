@@ -107,11 +107,11 @@
 }
 .main-inner__link a {
   background: #B0E31B;
-  border: 1px solid #B0E31B;
   box-shadow: 0px 4px 4px rgba(203, 196, 196, 0.1);
   border-radius: 20px;
   font-weight: 600;
   font-size: 14px;
+  text-align: center;
   color: #383E4B;
   text-transform: uppercase;
   padding: 8px 48px;
@@ -121,6 +121,7 @@
   background: none;
   box-shadow: none;
   color: #fff;
+  border: #B0E31B solid 1px;
 }
 .main-title {
   font-family: "SentenceDEMO";
@@ -149,8 +150,6 @@
   margin: 48px auto 0;
   max-width: 480px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px 22px;
   grid-template-areas: "Block1 Block3 . ." "Block2 Block3 . ." ". . . .";
 }
@@ -215,6 +214,13 @@
   color: #383E4B;
   text-transform: uppercase;
   padding: 7px 62px;
+  transition: all linear 0.1s;
+}
+.additionals-card .card-text div a:hover {
+  background: none;
+  box-shadow: none;
+  color: #fff;
+  border: #B0E31B solid 1px;
 }
 .additionals-card h3,
 .additionals-card div {
@@ -262,6 +268,52 @@
   opacity: 0.5;
   filter: blur(5px);
   top: 0;
+}
+
+.contacts {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+.contacts-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-inner__block {
+  max-width: 228px;
+  padding: 23px 0 29px;
+  background: rgba(58, 32, 80, 0.7);
+  border: 3px solid #B0E31B;
+  border-radius: 20px;
+  width: 100%;
+}
+.contacts-inner__block .contacts-text {
+  max-width: 175px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+}
+.contacts-inner__block .contacts-link {
+  text-align: center;
+  margin-top: 28px;
+}
+.contacts-inner__block .contacts-link a {
+  background: #B0E31B;
+  box-shadow: 0px 4px 4px rgba(203, 196, 196, 0.1);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #383E4B;
+  text-transform: uppercase;
+  padding: 8px 23px;
+  transition: all linear 0.1s;
+}
+.contacts-inner__block .contacts-link a:hover {
+  background: none;
+  box-shadow: none;
+  color: #fff;
+  border: #B0E31B solid 1px;
 }
 
 * {

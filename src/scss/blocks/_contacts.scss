@@ -1,6 +1,6 @@
 .contacts {
     max-width: $width;
-    margin: 0 auto;
+    margin: 28px auto 0;
 
     &-inner {
         display: flex;
@@ -8,6 +8,11 @@
 
         &__block {
             max-width: 228px;
+            padding: 23px 0 29px;
+            background: rgba(58, 32, 80, 0.7);
+            border: 3px solid #B0E31B;
+            border-radius: 20px;
+            width: 100%;
 
             .contacts-text {
                 max-width: 175px;
@@ -19,9 +24,10 @@
 
             .contacts-link {
                 text-align: center;
+                margin-top: 28px;
 
                 a {
-                   @include btn(8px 23px);
+                    @include btn(8px 23px);
                 }
             }
         }
