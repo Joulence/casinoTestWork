@@ -9,6 +9,17 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'SentenceDEMO'; 
 */
+.header-text__logo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 0;
+}
+.header-text__deposit {
+  font-family: "SentenceDEMO";
+  text-align: center;
+}
+
 .main {
   max-width: 480px;
   margin: 0 auto;

@@ -1,0 +1,15 @@
+.header {
+    &-text {
+        &__logo {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 30px 0;
+        }
+
+        &__deposit {
+            font-family: $sentdemo;
+            text-align: center;
+        }
+    }
+}
