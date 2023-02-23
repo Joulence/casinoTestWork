@@ -147,6 +147,7 @@
 }
 
 .additionals {
+  position: relative;
   margin: 48px auto 0;
   max-width: 480px;
   display: grid;
@@ -268,6 +269,18 @@
   opacity: 0.5;
   filter: blur(5px);
   top: 0;
+}
+.additionals-fly1 {
+  width: 66px;
+  right: -12%;
+  top: -8%;
+}
+.additionals-fly2 {
+  opacity: 0.9;
+  bottom: -2%;
+  left: -13%;
+  width: 44px;
+  transform: scaleX(-1);
 }
 
 .contacts {
