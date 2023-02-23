@@ -1,7 +1,16 @@
 .main {
-    max-width: 480px;
-    margin: 0 auto;
+    position: relative;
+    padding-top: 40px;
+
+    .blur {
+        top: 0;
+    }
+
     &-inner {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        max-width: 480px;
         background: rgba(58, 32, 80, 0.7);
         border: 3px solid #B0E31B;
         border-radius: 30px;
@@ -53,5 +62,20 @@
         text-transform: capitalize;
         color: #B0E31B;
         padding-bottom: 17px;
+    }
+
+    &-fly1 {
+        top: calc(-5% + 10px);
+        right: 3%;
+        width: 144px;
+        transform: rotate(20deg);
+    }
+
+    &-fly2 {
+        bottom: -13%;
+        opacity: 0.9;
+        width: 96px;
+        left: -10%;
+        transform: scaleX(-1) rotate(26deg);
     }
 }
