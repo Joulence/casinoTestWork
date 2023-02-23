@@ -9,6 +9,10 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'SentenceDEMO'; 
 */
+.header-text {
+  z-index: 2;
+  position: relative;
+}
 .header-text__logo {
   display: flex;
   justify-content: center;
@@ -18,6 +22,56 @@
 .header-text__deposit {
   font-family: "SentenceDEMO";
   text-align: center;
+}
+.header-main {
+  position: relative;
+}
+.header-main__woman {
+  position: relative;
+  left: 13%;
+  bottom: 50px;
+  z-index: 2;
+}
+.header-main__womanBG {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+.header-main__special {
+  position: absolute;
+}
+.header-main__special.special-percentage {
+  left: 0;
+}
+.header-main__special.special-spins {
+  right: 0;
+  top: 30%;
+  z-index: 3;
+}
+.header-main__special.special-money {
+  bottom: -5%;
+  z-index: 3;
+  left: 15%;
+}
+.header-fly1 {
+  width: 44px;
+  right: 8%;
+  top: -6%;
+}
+.header-fly2 {
+  left: 3%;
+  transform: rotate(-18.4deg) scaleX(-1);
+  width: 70px;
+}
+.header-fly3 {
+  top: 19%;
+  width: 96px;
+}
+.header-fly4 {
+  bottom: 28%;
+  left: 24%;
+  width: 134px;
+  transform: rotate(-11.04deg) scaleX(-1);
 }
 
 .main {
@@ -219,18 +273,19 @@ ul {
   margin: 0;
 }
 
-/* @media (max-width: 1600px) {
-    @include mediaScreen(4%);
+.blur {
+  position: absolute;
+  width: 100%;
+  height: 289px;
+  background: linear-gradient(180.2deg, #1F1032 36.86%, rgba(31, 16, 50, 0) 99.82%);
+  z-index: 2;
+}
+.blur.blur-bottom {
+  bottom: 0;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-@media (max-width: 1280px) {
-    @include mediaScreen(3%);
+.fly {
+  position: absolute;
+  z-index: 4;
 }
-
-@media (max-width: 1140px) {
-    @include mediaScreen(2%);
-}
-
-@media (max-width: 426px) {
-    @include mediaScreen(1%);
-} */

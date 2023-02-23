@@ -1,5 +1,8 @@
 .header {
     &-text {
+        z-index: 2;
+        position: relative;
+
         &__logo {
             display: flex;
             justify-content: center;
@@ -11,5 +14,65 @@
             font-family: $sentdemo;
             text-align: center;
         }
+    }
+
+    &-main {
+        position: relative;
+
+        &__woman {
+            position: relative;
+            left: 13%;
+            bottom: 50px;
+            z-index: 2;
+        }
+
+        &__womanBG {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
+
+        &__special {
+            position: absolute;
+
+            &.special-percentage {
+                left: 0;
+            }
+
+            &.special-spins {
+                right: 0;
+                top: 30%;
+                z-index: 3;
+            }
+
+            &.special-money {
+                bottom: -5%;
+                z-index: 3;
+                left: 15%;
+            }
+        }
+    }
+
+    &-fly1 {
+        width: 44px;
+        right: 8%;
+        top: -6%;
+    }
+
+    &-fly2 {
+        left: 3%;
+        transform: rotate(-18.4deg) scaleX(-1);
+        width: 70px;
+    }
+
+    &-fly3 {
+        top: 19%;
+        width: 96px;
+    }
+    &-fly4 {
+        bottom: 28%;
+        left: 24%;
+        width: 134px;
+        transform: rotate(-11.04deg) scaleX(-1);
     }
 }
