@@ -1,0 +1,29 @@
+.contacts {
+    max-width: $width;
+    margin: 0 auto;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+
+        &__block {
+            max-width: 228px;
+
+            .contacts-text {
+                max-width: 175px;
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 300;
+                font-size: 16px;
+            }
+
+            .contacts-link {
+                text-align: center;
+
+                a {
+                   @include btn(8px 23px);
+                }
+            }
+        }
+    }
+}
